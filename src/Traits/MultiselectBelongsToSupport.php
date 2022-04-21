@@ -214,7 +214,7 @@ trait MultiselectBelongsToSupport
             'display' => $this->formatDisplayValue($resource),
             'subtitle' => $resource->subtitle(),
             'value' => $value,
-        ]);
+        ], 'strlen');
     }
 
     public function shouldReorderAssociatableValues(NovaRequest $request)

@@ -333,7 +333,7 @@ export default {
 
         for (const resource of data.resources) {
           const label = resource.display || resource.title || '-';
-          const value = resource.value || resource.id.value || null;
+          const value = resource.value !== undefined ? resource.value : resource.id.value || null;
           newOptions.push({ value, label });
         }
 
